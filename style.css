@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#game-container {
+  text-align: center;
+  width: 80%;
+  max-width: 900px;
+}
+
+header {
+  background-color: #111;
+  padding: 20px;
+  color: #ff6600;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+#car-customization {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#car {
+  position: relative;
+  width: 500px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+#car-body {
+  width: 100%;
+  height: 100%;
+}
+
+#car-wheels, #car-sticker {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+#car-wheels {
+  bottom: 0;
+  left: 20px;
+}
+
+#car-sticker {
+  top: 20px;
+  right: 20px;
+}
+
+#controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+select, input[type="color"], button {
+  padding: 10px;
+  font-size: 1em;
+  background-color: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+select, input[type="color"] {
+  width: 200px;
+}
+
+button:hover {
+  background-color: #ff6600;
+}
+
+footer {
+  background-color: #111;
+  color: #aaa;
+  padding: 10px;
+  margin-top: 20px;
+}

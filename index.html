@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo de Customização de Carros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <header>
+      <h1>Personalize seu Carro!</h1>
+      <p>Escolha a cor, as rodas e os adesivos para criar o carro dos seus sonhos.</p>
+    </header>
+
+    <section id="car-customization">
+      <div id="car">
+        <img src="assets/car-body.png" alt="Carro" id="car-body">
+        <img src="assets/wheel1.png" alt="Rodas" id="car-wheels">
+        <img src="assets/sticker1.png" alt="Adesivo" id="car-sticker">
+      </div>
+
+      <div id="controls">
+        <div class="control">
+          <label for="car-color">Escolha a Cor:</label>
+          <input type="color" id="car-color" value="#ff0000">
+        </div>
+
+        <div class="control">
+          <label for="wheels">Escolha as Rodas:</label>
+          <select id="wheels">
+            <option value="wheel1.png">Rodas Clássicas</option>
+            <option value="wheel2.png">Rodas Esportivas</option>
+          </select>
+        </div>
+
+        <div class="control">
+          <label for="stickers">Escolha um Adesivo:</label>
+          <select id="stickers">
+            <option value="sticker1.png">Adesivo 1</option>
+            <option value="sticker2.png">Adesivo 2</option>
+          </select>
+        </div>
+
+        <div class="control">
+          <button id="reset-btn">Resetar Customizações</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Versão 1.0 - Jogo de Customização de Carros</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
